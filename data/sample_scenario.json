@@ -1,0 +1,30 @@
+{
+  "roads": [
+    {"from": "Depot", "to": "Clinic", "cost": 4},
+    {"from": "Depot", "to": "Shelter", "cost": 6},
+    {"from": "Clinic", "to": "Shelter", "cost": 3},
+    {"from": "Clinic", "to": "Village", "cost": 5},
+    {"from": "Shelter", "to": "Village", "cost": 2},
+    {"from": "Depot", "to": "Village", "cost": 10}
+  ],
+  "road_cost_change": {"from": "Clinic", "to": "Shelter", "new_cost": 9},
+  "transport_routes": [
+    {"from": "Warehouse", "to": "HubA", "capacity": 8},
+    {"from": "Warehouse", "to": "HubB", "capacity": 5},
+    {"from": "HubA", "to": "Shelter", "capacity": 6},
+    {"from": "HubA", "to": "HubB", "capacity": 3},
+    {"from": "HubB", "to": "Shelter", "capacity": 7}
+  ],
+  "flow_source": "Warehouse",
+  "flow_sink": "Shelter",
+  "supply_weights": [2, 7, 11, 13, 17, 19],
+  "vehicle_capacity": 30,
+  "team_conflicts": {
+    "Alice": ["Bob", "Dylan"],
+    "Bob": ["Alice", "Cara"],
+    "Cara": ["Bob"],
+    "Dylan": ["Alice"]
+  },
+  "typed_location": "sheltrr",
+  "known_locations": ["depot", "clinic", "shelter", "village", "warehouse"]
+}
